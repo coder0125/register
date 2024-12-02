@@ -72,7 +72,43 @@ CREATE TABLE Registration (
 
 
 
+### 4. If using HTML PAGE: deploy in a server using Apache Tomcat
+
+code --
+
+  <!DOCTYPE html>
+  
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration System</title>
+ </head>
+ <body>
+        <h1>Registration Form</h1>
+    <form action="/register" method="POST"> 
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"></textarea><br><br>
+       <input type="submit" value="Submit">
+    </form>
+</body>
+    
+</html>
+
+*****************************************************
+
+
   **Note**: This project has been developed with both features:
+  *****************************************************************
+  
 1. The ability to **run the project on a server** (using **Spring Boot** , Apache Tomcat).
 2. The option to **run the program using a UI front-end page** within **Eclipse**.
 
